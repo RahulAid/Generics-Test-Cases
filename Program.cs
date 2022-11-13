@@ -7,8 +7,8 @@ namespace Generics_Test_Cases
         {
             Console.WriteLine("Problems on Generics");
 
-            string output = MaxNumberCheck.MaxStringWord("Apple", "Banana", "Peach");
-            Console.WriteLine("\nMax String word is: " + output);
+            int output = MaxNumberCheck.MaxIntegerNumber(11, 111, 1111);
+            Console.WriteLine("\nMax integer number is: " + output);
         }
     }
 }
