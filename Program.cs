@@ -7,18 +7,16 @@ namespace Generics_Test_Cases
         {
             Console.WriteLine("Problems on Generics");
 
-            MaxNumberCheck<int> objint = new MaxNumberCheck<int>(11, 111, 1111, 11111);
-            Console.WriteLine("\nMax integer number is: " + objint.MaxMethod());
+            MaxNumberCheck objMaxNumber = new MaxNumberCheck();
 
-            MaxNumberCheck<float> objfloat = new MaxNumberCheck<float>(1, 11, 111, 1111);
-            Console.WriteLine("\nMax float number is: " + objfloat.MaxMethod());
+            int output1 = objMaxNumber.MaxNumber<int>(11, 111, 2222);
+            Console.WriteLine("\nMax integer number is: " + output1);
 
-            MaxNumberCheck<string> objstring = new MaxNumberCheck<string>("Apple", "Peach", "Banana", "Orange");
-            Console.WriteLine("\nMax string word is: " + objstring.MaxMethod());
+            float output2 = objMaxNumber.MaxNumber<float>(1, 11, 222);
+            Console.WriteLine("\nMax float number is: " + output2);
 
-            int[] arr = { 11, 111, 1111, 11111, 111111 };
-            MaxNumberCheck<int> objvalue = new MaxNumberCheck<int>(arr);
-            objvalue.PrintMaxValue();
+            string output3 = objMaxNumber.MaxNumber<string>("Apple", "Peach", "Banana");
+            Console.WriteLine("\nMax string word is: " + output3);
         }
     }
 }
