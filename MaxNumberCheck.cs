@@ -8,7 +8,7 @@ namespace Generics_Test_Cases
 {
     public class MaxNumberCheck
     {
-        public static int MaxIntegerNumber(int val1, int val2, int val3)
+        public static float MaxFloatNumber(float val1, float val2, float val3)
         {
             if (val1.CompareTo(val2) > 0 && val1.CompareTo(val3) > 0)
                 return val1;
