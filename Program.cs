@@ -7,8 +7,8 @@ namespace Generics_Test_Cases
         {
             Console.WriteLine("Problems on Generics");
 
-            float output = MaxNumberCheck.MaxFloatNumber(11f, 111f, 2222f);
-            Console.WriteLine("\nMax Float number is: " + output);
+            string output = MaxNumberCheck.MaxStringWord("Peach", "Apple", "Banana");
+            Console.WriteLine("\nMax String word is: " + output);
         }
     }
 }
