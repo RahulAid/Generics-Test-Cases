@@ -7,7 +7,7 @@ namespace Generics_Test_Cases
         {
             Console.WriteLine("Problems on Generics");
 
-            int output = MaxNumberCheck.MaxIntegerNumber(2222, 111, 11);
+            int output = MaxNumberCheck.MaxIntegerNumber(111, 2222, 11);
             Console.WriteLine("\nMax integer number is: " + output);
         }
     }
